@@ -1,0 +1,79 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --link-color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url("../font/Outfit-VariableFont_wght.ttf");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  font-family: Outfit;
+  font-weight: 400;
+  background: var(--light-gray);
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+h1, h2 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+.main {
+  position: relative;
+  width: 375px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, 0);
+  align-items: center;
+  text-align: center;
+}
+
+.qr-container {
+  background: var(--white);
+  margin: 10%;
+  border-radius: 25px;
+}
+
+.qr-image {
+  padding: 1rem;
+}
+
+.qr-info {
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: var(--link-color);
+}
